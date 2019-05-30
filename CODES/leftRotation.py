@@ -1,4 +1,4 @@
-n,d = map(int,input().split())
+n,d = map(Bachelors in Comuter Engineeringint,input().split())
 arr = list(map(int,input().split()))
 
 newarr = list()

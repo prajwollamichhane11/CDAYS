@@ -1,25 +1,23 @@
 n = int(input())
 arr = list(map(int,input().split()))
 
-pos = 0
+p = 0
 count = 0
 
 for i in range(n):
-    pos += 2
+    p += 2
 
-    if pos < n:
-        if arr[pos] == 0:
+    if p < n:
+        if arr[p] == 0:
             count += 1
         else:
-            pos -= 1
+            p -= 1
             count += 1
 
-    elif (pos == n):
+    elif p == n:
         count += 1
 
     else:
         break
 
-
-
-print (count)
+print(count)
