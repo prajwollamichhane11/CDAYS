@@ -6,9 +6,13 @@ listt = []
 def subtract(a,b):
     return abs(a-b)
 
+minm = 1000000000
+
 for i in range(n-1):
     for j in range(i+1,n):
-        listt.append(subtract(arr[i],arr[j]))
+        item = subtract(arr[i],arr[j])
+        if item < minm:
+            minm = item
 
-listt = sorted(listt)
-print(listt[0])
+# listt = sorted(listt)
+print(item)
