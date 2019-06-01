@@ -6,11 +6,12 @@ for i in range(n):
 
     lst = list(f)
 
-    for i in range(0,32):
+    for i in range(32):
         if lst[i] == "0":
             lst[i] = "1"
         else:
             lst[i] = "0"
+
     lst = "".join(lst)
 
     print(int(lst,2))
